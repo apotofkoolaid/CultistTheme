@@ -1,0 +1,4 @@
+displayName = Lunatic Cultist Theme
+author = apotofkoolaid
+version = 2.0.8
+includeSource = true
