@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "NvCzofE9eQX+Idz9LcCPk0VOe7hmfk9/I0jnTSRKCYx62OlsJRQtvYA81nH0WQceeTRcyZ4EMIk/tafWdcXSyg==",
+  "dgSpecHash": "mWLnWZ/1t1sBLCQhcAu7NKazuyYtSnVvGkwu106nZxmB7RAruulUGBHaWa7Vf6le3LVXYvATfTCgXo/ecUDg0Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\conne\\Documents\\My Games\\Terraria\\ModLoader\\Beta\\Mod Sources\\CultistTheme\\CultistTheme.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\apotofkoolaid\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\CultistTheme\\CultistTheme.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\apotofkoolaid\\.nuget\\packages\\tmodloader.codeassist\\0.1.5\\tmodloader.codeassist.0.1.5.nupkg.sha512"
+  ],
   "logs": []
 }

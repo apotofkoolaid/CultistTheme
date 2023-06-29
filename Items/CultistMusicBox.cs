@@ -1,19 +1,20 @@
+using Terraria;
 using Terraria.ModLoader;
 using Terraria.ID;
 using Terraria.Utilities;
-using Terraria.GameContent.Creative;
+using Terraria.Localization;
 
 namespace CultistTheme.Items
 {
 	public class CultistMusicBox : ModItem
 	{
+		public override LocalizedText DisplayName => Language.GetOrRegister("Music Box (Lunatic Cultist)");
+
+		public override LocalizedText Tooltip => Language.GetOrRegister("");
+
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Music Box (Lunatic Cultist)");
-
-			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
-
-			MusicLoader.AddMusicBox(Mod, MusicLoader.GetMusicSlot(Mod, "Music/LunaticCultist"), ModContent.ItemType<Items.CultistMusicBox>(), ModContent.TileType<Tiles.CultistMusicBox>());
+			MusicLoader.AddMusicBox(Mod, MusicLoader.GetMusicSlot(Mod, "Music/LunaticCultist"), ModContent.ItemType<CultistMusicBox>(), ModContent.TileType<Tiles.CultistMusicBox>());
 		}
 
 		public override void SetDefaults()
@@ -30,7 +31,6 @@ namespace CultistTheme.Items
 			Item.rare = ItemRarityID.LightRed;
 			Item.value = 100000;
 			Item.accessory = true;
-			Item.canBePlacedInVanityRegardlessOfConditions = true;
 		}
 
 		public override bool? PrefixChance(int pre, UnifiedRandom rand)
